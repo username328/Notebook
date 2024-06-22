@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нотатник</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="notebook.png"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+      
+        <h1>Нотатник</h1> 
+        <div class="input-section">
+            <input type="text" id="noteTitleInput" placeholder="Заголовок нотатки">
+            <textarea id="noteTextInput" placeholder="Основний текст нотатки"></textarea>
+            <button id="addNoteButton">Додати нотатку</button>
+        </div>
+        <div class="notes-container">
+            <h2>Активні Нотатки</h2>
+            <ul id="noteList" class="note-list">
+                
+            </ul>
+        </div>
+        <div class="archive-container">
+            <h2>Архівовані Нотатки</h2>
+            <ul id="archiveList" class="note-list">
+                
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+
+  font-family: 'Comic Sans MS', sans-serif;
+  background: rgb(18, 18, 18);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  background: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+  width: 90%;
+  margin: 20px auto;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#noteTitleInput, #noteTextInput {
+  padding: 10px;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 4px;
+  background: rgb(46, 46, 46);
+  color: white;
+}
+
+#noteTextInput {
+  height: 100px;
+}
+
+#addNoteButton {
+  padding: 10px 20px;
+  background: rgb(0, 212, 49);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#addNoteButton:hover {
+  background: rgb(0, 152, 33);
+}
+
+.notes-container {
+  margin-top: 20px;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.note-list li {
+  background: rgb(51, 51, 51);
+  border: 1px solid rgb(68, 68, 68);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+
+.note-list li .note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-list li .note-time {
+  color: rgb(153, 153, 153);
+  font-size: 0.85em;
+}
+
+.note-list li .note-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.note-list li .archive-button{
+  background: yellow;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.note-list li .delete-button{
+  background:red ;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.note-list li .edit-button {
+  background: rgb(0, 255, 247);
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.note-list li .archive-button:hover {
+  background: rgb(211, 211, 0);
+}
+
+.note-list li .delete-button:hover {
+  background: rgb(216, 0, 0);
+}
+
+.note-list li .edit-button:hover {
+  background: #00bdb7;
+}
